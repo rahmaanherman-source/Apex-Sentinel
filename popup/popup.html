@@ -1,0 +1,117 @@
+<!-- ============================================================
+  PRINCIPAL    : RAHMANN MANZAR EL HERMAN
+  ENTITY       : Make It All Count LLC / Apex Global LLC
+  PATENT       : USPTO Provisional #63/940,186
+  PHONE        : 312-307-6355
+  EMAIL        : rahmaanherman@icloud.com
+  DOMAIN       : apexlifeglobal.com
+  DATE         : 2026-06-28
+  DESCRIPTION  : APEX SENTINEL — Popup UI
+  ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX SENTINEL</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-section">
+        <div class="logo">⚡</div>
+        <h1 class="title">APEX SENTINEL</h1>
+      </div>
+      <div class="version">v1.0.4</div>
+    </header>
+
+    <!-- Status Section -->
+    <section class="status-section">
+      <div class="status-indicator">
+        <div class="status-dot active" id="statusDot"></div>
+        <span class="status-text" id="statusText">ACTIVE</span>
+      </div>
+      <div class="mode-indicator">
+        <span class="mode-label">Sovereign Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="sovereignToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-icon">🛡️</div>
+        <div class="stat-content">
+          <div class="stat-value" id="trackersBlocked">0</div>
+          <div class="stat-label">Trackers Blocked</div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">🍪</div>
+        <div class="stat-content">
+          <div class="stat-value" id="cookiesBlocked">0</div>
+          <div class="stat-label">Cookies Blocked</div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">⚠️</div>
+        <div class="stat-content">
+          <div class="stat-value" id="threatsDetected">0</div>
+          <div class="stat-label">Threats Detected</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <h2 class="section-title">Protection Features</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span class="feature-text">Privacy Shield Active</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span class="feature-text">Security Monitor Active</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span class="feature-text">Tracking Protection</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span class="feature-text">Data Control Enabled</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Actions Section -->
+    <section class="actions-section">
+      <button class="btn btn-primary" id="toggleBtn">
+        <span id="toggleBtnText">Disable Protection</span>
+      </button>
+      <button class="btn btn-secondary" id="resetBtn">Reset Statistics</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <div class="sovereign-text">SOVEREIGN INTELLIGENCE</div>
+        <div class="godspeed-text">GODSPEED</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://apexlifeglobal.com" target="_blank" class="footer-link">apexlifeglobal.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
