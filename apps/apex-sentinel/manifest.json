@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "APEX SENTINEL",
+  "version": "1.0.5",
+  "description": "Privacy-first browser protection: tracker blocking, smart dark mode, and URL cleansing.",
+  "author": "Apex Global LLC",
+  "homepage_url": "https://github.com/rahmaanherman-source/Apex-Sentinel",
+  "permissions": ["storage", "declarativeNetRequest", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {"service_worker": "src/background.js", "type": "module"},
+  "action": {"default_title": "APEX SENTINEL", "default_popup": "src/popup/popup.html"},
+  "options_ui": {"page": "src/options/options.html", "open_in_tab": true},
+  "icons": {"16": "icons/icon.svg", "48": "icons/icon.svg", "128": "icons/icon.svg"},
+  "content_scripts": [{"matches": ["<all_urls>"], "js": ["src/content/content.js"], "run_at": "document_start"}],
+  "declarative_net_request": {"rule_resources": [{"id": "shield", "enabled": true, "path": "rules/shield.json"}]},
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'self'"}
+}
