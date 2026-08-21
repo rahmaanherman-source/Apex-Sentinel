@@ -1,0 +1,25 @@
+name: APEX SENTINEL
+on:
+  push:
+    paths:
+      - 'apps/apex-sentinel/**'
+      - '.github/workflows/apex-sentinel.yml'
+  pull_request:
+    paths:
+      - 'apps/apex-sentinel/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/apex-sentinel
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm test
+      - name: Validate JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('manifest.json')); JSON.parse(require('fs').readFileSync('rules/shield.json'));"
+      - name: Verify required files
+        run: node -e "const fs=require('fs'); const f=['LICENSE','README.md','SECURITY.md','manifest.json','package.json','godspeed_builder.html','icons/icon.svg','rules/shield.json','src/background.js','src/content/aura.js','src/content/content.js','src/lib/constants.js','src/lib/matcher.js','src/lib/url-cleaner.js','src/popup/popup.html','src/popup/popup.css','src/popup/popup.js','src/options/options.html','src/options/options.css','tests/matcher.test.js','tests/url-cleaner.test.js']; for(const x of f) if(!fs.existsSync(x)) throw new Error('Missing '+x); console.log('Verified '+f.length+' project files');"
