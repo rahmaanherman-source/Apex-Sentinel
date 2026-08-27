@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>APEX SENTINEL — AI Protection</title>
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="home" aria-label="APEX SENTINEL home">
+      <span class="avatar"><img src="../icons/icon-128.png" alt="APEX SENTINEL Mechanical Cat"></span>
+      <span><strong>APEX SENTINEL</strong><small>AI PROTECTION</small></span>
+    </button>
+    <span class="live"><i></i> LOCAL</span>
+  </header>
+
+  <main>
+    <section class="peek-card" aria-labelledby="page-title">
+      <div class="eyebrow">CURRENT PAGE</div>
+      <div class="page-row">
+        <div class="page-icon" id="page-icon">◎</div>
+        <div class="page-copy"><h1 id="page-title">Browser context</h1><p id="page-url">Waiting for browser context…</p></div>
+      </div>
+      <div class="evidence" id="evidence"><span class="dot neutral"></span><span>Evidence not assessed</span></div>
+    </section>
+
+    <section class="shield-card">
+      <div class="section-head"><span>PROTECTION CENTER</span><span class="state" id="shield-state">READY</span></div>
+      <div class="checks">
+        <button class="check" data-action="page"><span>◈</span><b>Page</b><small>Inspect available context</small></button>
+        <button class="check" data-action="link"><span>↗</span><b>Link</b><small>Review before opening</small></button>
+        <button class="check" data-action="download"><span>↓</span><b>Download</b><small>Review local download</small></button>
+        <button class="check" data-action="privacy"><span>◌</span><b>Privacy</b><small>Review browser exposure</small></button>
+        <button class="check" data-action="popup"><span>□</span><b>Pop-ups</b><small>Review suspicious behavior</small></button>
+        <button class="check" data-action="cleanup"><span>⌁</span><b>Cleanup</b><small>Choose what to organize</small></button>
+      </div>
+    </section>
+
+    <section class="cat-card">
+      <div class="cat"><img src="../icons/icon-128.png" alt="Mechanical Cat"></div>
+      <div class="cat-copy"><strong id="cat-title">Purr… Sentinel is watching.</strong><p id="cat-message">No automatic safety verdict. Ask me to inspect something.</p></div>
+    </section>
+
+    <section class="ask-card">
+      <div class="section-head"><span>ASK SENTINEL</span><span class="local-pill">LOCAL-FIRST</span></div>
+      <div class="messages" id="messages"><div class="message bot">I can explain what the browser makes available. I won't invent a threat verdict.</div></div>
+      <form id="ask-form" class="ask-form">
+        <input id="ask-input" autocomplete="off" placeholder="Ask about this page…" aria-label="Ask Sentinel">
+        <button type="submit" aria-label="Send">➜</button>
+      </form>
+    </section>
+
+    <section class="modules">
+      <div class="section-head"><span>APEX FAMILY</span><span class="muted">MODULES</span></div>
+      <div class="module-grid">
+        <button data-module="Performance">⚙<span>Performance</span></button>
+        <button data-module="Verification">✓<span>Verification</span></button>
+        <button data-module="Security">⌁<span>Security</span></button>
+        <button data-module="Release">▣<span>Release</span></button>
+      </div>
+    </section>
+
+    <section class="cleanup-card" id="cleanup-panel">
+      <div class="section-head"><span>LOCAL CLEANUP</span><span class="muted">USER CONTROLLED</span></div>
+      <p>Sentinel can organize files only where you explicitly grant access. Preview first; deletion always requires confirmation.</p>
+      <div class="cleanup-actions"><button data-action="choose-files">CHOOSE FILES</button><button class="ghost" data-action="organize">ORGANIZE</button></div>
+      <div class="cleanup-status" id="cleanup-status">No folder selected.</div>
+    </section>
+  </main>
+
+  <footer><span>APEX SENTINEL</span><span>•</span><span>No fabricated protection claims</span></footer>
+  <script src="sidebar.js"></script>
+</body>
+</html>
