@@ -122,13 +122,13 @@ This creates a clean distribution package excluding:
      - Summary: (from EXTENSION_README.md)
      - Description: Full feature list
      - Categories: Privacy & Security
-     - License: MIT
+     - License: Proprietary
      - Privacy Policy: "No data collection"
 
 3. **Provide Required Info:**
    - Version: 1.0.4
    - Release notes: "Initial public release"
-   - License: MIT (already in repo)
+   - License: Proprietary (already in repo)
    - Privacy policy: State that no data is collected
 
 4. **Review Process:**
@@ -159,7 +159,7 @@ Before submission, verify:
 - [ ] Content script injection works
 - [ ] No console errors
 - [ ] Privacy policy is clear (no data collection)
-- [ ] License file is present (MIT)
+- [ ] License file is present (Proprietary)
 
 ---
 
