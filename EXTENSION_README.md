@@ -47,7 +47,7 @@ APEX-SENTINEL/
 │   ├── icon-16.png        # 16x16 icon
 │   ├── icon-48.png        # 48x48 icon
 │   └── icon-128.png       # 128x128 icon
-├── LICENSE                # MIT License
+├── LICENSE                # Proprietary — All rights reserved
 └── README.md             # This file
 ```
 
@@ -109,7 +109,7 @@ zip -r apex-sentinel-v1.0.4.zip . -x "*.git*" "*.DS_Store" "node_modules/*"
 
 ### 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Proprietary software — Copyright (c) 2026 Apex Global LLC. All rights reserved. See [LICENSE](LICENSE).
 
 ### 🔐 Intellectual Property
 
